@@ -7,5 +7,5 @@ package fast {
    * Returns true if all elements of the list are 'truthy',
    * otherwise returns false
    */
-  public static var all:Function = partial(reduce, ops.and, true);
+  public var all:Function = partial(reduce, ops.and, true);
 }
