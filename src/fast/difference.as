@@ -12,5 +12,5 @@ package fast {
    * difference(10, [3,2,1])
    * => 4
    */
-	public var difference:Function = partial(reduce, ops.subtract);
+  public var difference:Function = partial(reduce, ops.subtract);
 }

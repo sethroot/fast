@@ -1,5 +1,4 @@
 package fast {
-
   /**
    * Apply a function to an argument list
    */

@@ -1,5 +1,5 @@
 package fast {
-	/**
+  /**
    * Reverse the order of the arguments of a Function
    *
    * f(a, b, c) == flip(f)(c,b,a);

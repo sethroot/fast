@@ -1,8 +1,8 @@
 package fast {
-	import fast.partial;
-	import fast.reduce;
-	
-	/**
+  import fast.partial;
+  import fast.reduce;
+
+  /**
    * Reduce a list with Math.max.
    *
    * Because the max operator does not have an identity,
@@ -14,5 +14,5 @@ package fast {
    * max(0, [-50, -7, -20]);
    * => -7
    */
-	public var max:Function = partial(reduce, Math.max);
+  public var max:Function = partial(reduce, Math.max);
 }

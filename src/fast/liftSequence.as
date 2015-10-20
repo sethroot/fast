@@ -1,5 +1,5 @@
 package fast {
-	/**
+  /**
    * Lifts a non-sequencable function into a sequencable function
    * 
    * // accepts and invokes continuation
