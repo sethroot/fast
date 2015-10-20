@@ -23,9 +23,9 @@ package fast {
    * For comparison, in Haskell:
    * result = H . (G arg) . F $ x
    */
-  public function compose(xs : Array) : Function {
-    return function(input : *) : * {
-      var out : * = input;
+  public function compose(xs:Array):Function {
+    return function(input:*):* {
+      var out:* = input;
 
       var f:Function;
       var args:Array;
