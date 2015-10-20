@@ -40,7 +40,7 @@ compose([flip(ops.divide), 2],
 ```
 import fast.partial;
 
-var a = function(cont:Function) {
+var a = function(cont:Function):void {
   if (cont != null) cont();
 };
 
@@ -51,12 +51,14 @@ var b = function(arg1:*, arg2:*, cont:Function):void {
 var c = a;
 
 // Use with partial to apply args up until continuation
-fast.sequence(new <Function>[a, partial(b, arg1, arg2), c]);
+sequence(new <Function>[a, partial(b, arg1, arg2), c]);
 ```
 
 ###liftSequence
 ```
-var a = function(cont:Function) {
+import fast.sequence;
+
+var a = function(cont:Function):void {
   if (cont != null) cont();
 };
 
@@ -65,7 +67,7 @@ var b = function():void {
 
 var c = a;
 
-fast.sequence(new <Function>[a, liftSequence(b), c]);
+sequence(new <Function>[a, liftSequence(b), c]);
 ```
 
 ###flip
