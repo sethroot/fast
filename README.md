@@ -40,11 +40,13 @@ compose([flip(ops.divide), 2],
 ```
 import fast.partial;
 
-var a = function(cont:Function):void {
+var a = function(cont:Function = null):void {
+  /* function body */
   if (cont != null) cont();
 };
 
-var b = function(arg1:*, arg2:*, cont:Function):void {
+var b = function(arg1:*, arg2:*, cont:Function = null):void {
+  /* function body */
   if (cont != null) cont();
 };
 
@@ -58,11 +60,13 @@ sequence(new <Function>[a, partial(b, arg1, arg2), c]);
 ```
 import fast.sequence;
 
-var a = function(cont:Function):void {
+var a = function(cont:Function = null):void {
+  /* function body */
   if (cont != null) cont();
 };
 
 var b = function():void {
+  /* function body */
 };
 
 var c = a;
