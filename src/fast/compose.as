@@ -27,9 +27,12 @@ package fast {
     return function(input : *) : * {
       var out : * = input;
 
-      var f : Function;
-      var args : Array;
-      for each (var iteratee : * in xs.reverse()) {
+      var f:Function;
+      var args:Array;
+      var iteratee:*;
+      var i:int = xs.length - 1;
+      for(i; i>-1; i--) {
+        iteratee = xs[i];
         if (iteratee is Array) {
           f = head(iteratee as Array) as Function;
           args = tail(iteratee as Array) as Array;
