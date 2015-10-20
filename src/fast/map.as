@@ -10,7 +10,7 @@ package fast {
    * 2) Unlike Array.map, this function produces a new Array instance.
    *
    */
-	public function map(f:Function, xs:Array):Array {
+  public function map(f:Function, xs:Array):Array {
     var out:Array = [];
     var i:uint = 0;
     for (i; i<xs.length; i++) {
