@@ -8,10 +8,10 @@ package fast {
    * Because the max operator does not have an identity,
    * you must provide the initial value
    *
-   * max(10, [-30,42,0])
+   * max(10, [-30,42,0]);
    * => 42
    * 
-   * max(0, [-50, -7, -20])
+   * max(0, [-50, -7, -20]);
    * => -7
    */
 	public var max:Function = partial(reduce, Math.max);
