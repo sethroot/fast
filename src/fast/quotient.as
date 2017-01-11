@@ -9,8 +9,8 @@ package fast {
    * Because the division operator does not have an identity,
    * you must provide the initial value
    *
-   * difference(12, [4,2])
-   * => 2
+   * quotient(100, [2,2,5])
+   * => 5
    */
   public var quotient:Function = partial(reduce, ops.divide);
 }
