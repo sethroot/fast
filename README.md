@@ -1,9 +1,9 @@
 # fast
 The Functional ActionScript Toolkit
 
-##Function
+## Function
 
-###partial
+### partial
 ```
 import fast.ops;
 
@@ -16,7 +16,7 @@ powerOf2(3);
 => 8
 ```
 
-###compose
+### compose
 ```
 import fast.flip;
 import fast.ops;
@@ -36,7 +36,7 @@ compose([flip(ops.divide), 2],
 => -5
 ```
 
-###sequence
+### sequence
 ```
 import fast.partial;
 
@@ -56,7 +56,7 @@ var c = a;
 sequence(new <Function>[a, partial(b, arg1, arg2), c]);
 ```
 
-###liftSequence
+### liftSequence
 ```
 import fast.sequence;
 
@@ -74,7 +74,7 @@ var c = a;
 sequence(new <Function>[a, liftSequence(b), c]);
 ```
 
-###flip
+### flip
 ```
 import fast.ops;
 
@@ -82,13 +82,13 @@ flip(ops.divide)(2, 10);
 => 5
 ```
 
-###ap
+### ap
 ```
 ap(Math.max, 3, 7)
 => 7
 ```
 
-###identity
+### identity
 ```
 identity("make it fast!");
 => "make it fast!"
@@ -106,9 +106,9 @@ identity(identity);
 => Function (@<address>)
 ```
 
-##Array
+## Array
 
-###head
+### head
 ```
 head([]);
 => null
@@ -117,7 +117,7 @@ head([1,2,3]);
 => 1
 ```
 
-###tail
+### tail
 ```
 tail([]);
 => []
@@ -126,7 +126,7 @@ tail([1,2,3]);
 => [2,3]
 ```
 
-###map
+### map
 ```
 import fast.ops;
 import fast.partial;
@@ -135,7 +135,7 @@ map(partial(ops.add, 1), [1,2,3]);
 => [2,3,4]
 ```
 
-###reduce
+### reduce
 ```
 import fast.ops;
 
@@ -143,7 +143,7 @@ reduce(ops.add, 0, [1,2,3]);
 => 6
 ```
 
-###range
+### range
 ```
 import fast.ops;
 
@@ -166,13 +166,13 @@ range(-1);
 => []
 ```
 
-###sum
+### sum
 ```
 sum([1,2,3])
 => 6
 ```
 
-###difference
+### difference
 ```
 difference(10, [5,2]);
 => 3
@@ -181,19 +181,19 @@ difference(-10, [5,2]);
 => -17
 ```
 
-###product
+### product
 ```
 product([2,5,10])
 => 100
 ```
 
-###quotient
+### quotient
 ```
 quotient(100, [2,2,5])
 => 5
 ```
 
-###max
+### max
 ```
 max(10, [-30,42,0]);
 => 42
@@ -202,7 +202,7 @@ max(0, [-50,-7,-20]);
 => 0
 ```
 
-###min
+### min
 ```
 min(10, [-30,42,0]);
 => -30
@@ -213,7 +213,7 @@ min(0, [-50,-7,-20]);
 
 ## Boolean
 
-###any
+### any
 ```
 any([]);
 => false
@@ -228,7 +228,7 @@ any([false, false]);
 => false
 ```
 
-###all
+### all
 ```
 all([]);
 => true
@@ -240,7 +240,7 @@ all([true, false]);
 => false
 ```
 
-###none
+### none
 ```
 none([]);
 => true
@@ -255,57 +255,57 @@ none([false, true]);
 => false
 ```
 
-##Operators
+## Operators
 
-###fst
+### fst
 ```
 fst(1, 2);
 => 1
 ```
 
-###snd
+### snd
 ```
 snd(1, 2);
 => 2
 ```
 
-###add
+### add
 ```
 add(1, 2);
 => 3
 ```
 
-###subtract
+### subtract
 ```
 subtract(1, 2);
 => -1
 ```
 
-###multiply
+### multiply
 ```
 multiply(1, 2);
 => 2
 ```
 
-###divide
+### divide
 ```
 divide(1, 2);
 => .5
 ```
 
-###and
+### and
 ```
 and(true, false);
 => false
 ```
 
-###or
+### or
 ```
 or(true, false);
 => true
 ```
 
-###not
+### not
 ```
 not(true);
 => false
